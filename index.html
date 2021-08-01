@@ -27,10 +27,11 @@
           <li class="nav__item"><a href="#" class="nav__link link">Контакты</a></li>
         </ul>
       </nav>
-      <button class="mobile-menu__button">
+
+      <button type="button" class="mobile-menu__button" data-menu-button aria - expended="false">
         <svg class="mobile-menu__icon">
-          <use href="./images/symbol-defs.svg#burger"></use>
-          <use href="./images/symbol-defs.svg#close"></use>
+          <use class="mobile-menu__open" href="./images/symbol-defs.svg#burger"></use>
+          <use class="mobile-menu__close" href="./images/symbol-defs.svg#close"></use>
         </svg>
       </button>
 
@@ -48,17 +49,46 @@
           </a>
         </li>
       </ul>
+      </div>
+      <div class="mobile-menu" data-menu>  
+        <div class="mobile-menu__container">   
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link link mobile-menu__link--active active">Студия</a></li>
+            <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link link">Контакты</a></li>
+          </ul>
+
+          <ul class="mobile-contacts__list list">
+            <li class="mobile-contacts__item">
+              <a class="mobile-contacts__link list link" href="mailto:info@devstudio.com">                
+                info@devstudio.com
+                </a>
+            </li>
+            <li  class="mobile-contacts__item">
+              <a class="mobile-contacts__link list link" href="tel:+38-096-111-11-11">                
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+
+          <ul class="mobile-social__list list">
+            <li class="mobile-social__item"><a class="mobile-social__link list link" href="#">Instagram</a></li>
+            <li class="mobile-social__item"><a class="mobile-social__link list link" href="#">Twitter</a></li>
+            <li class="mobile-social__item"><a class="mobile-social__link list link" href="#">Facebook</a></li>
+            <li class="mobile-social__item"><a class="mobile-social__link list link" href="#">LinkedIn</a></li>
+          </ul>
+        </div>
       </div> 
     </header>
 
     <main>
       <!-- Герой -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
         <h1 class="hero__title">Эффективные решения <br /> для вашего бизнеса</h1>
         <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Преимущества -->
       <section class="advantages">
@@ -340,7 +370,7 @@
     </main>
 
     <!-- Футер -->
-    <!-- <footer class="footer">
+    <footer class="footer">
     <div class="container cont-footer">
       
       <div class="address-space">
@@ -407,7 +437,7 @@
         </form>        
       </div>
     </div>
-    </footer> -->
+    </footer>
 
     <!-- Модалка -->
 
@@ -456,7 +486,7 @@
         <button class="form-button" type="submit">Отправить</button>
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>

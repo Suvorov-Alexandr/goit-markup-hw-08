@@ -1,8 +1,20 @@
 /* Footer */
 
 .cont-footer {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 } 
 
 .nav-footer:not(:last-child) {
@@ -43,7 +55,9 @@
   }
 
   &-space {
-    margin-right: 70px;
+    @media screen and (min-width: 768px) {
+      margin-right: 70px;
+    }  
   }
 
   &-contacts {
@@ -80,6 +94,7 @@
 
 .listf2 {
   display: flex;
+  justify-content: center;
 }
 
 .link-social-footer {
@@ -112,12 +127,19 @@
 }
 
 .subscribe {
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
   position: relative;
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
 }
 
 .form-position {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .form-inputf {
@@ -156,5 +178,16 @@
   background-repeat: no-repeat;
   background-position: 85% 55%;
   padding: 10px 62px 10px 29px;
-  margin-left: 12px;
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }  
+}
+
+.join-us {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }

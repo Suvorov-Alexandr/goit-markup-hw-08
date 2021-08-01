@@ -27,6 +27,12 @@
           <li class="nav__item"><a href="#" class="nav__link link">Контакты</a></li>
         </ul>
       </nav>
+      <button type="button" class="mobile-menu__button" data-menu-button aria - expended="false">
+        <svg class="mobile-menu__icon">
+          <use class="mobile-menu__open" href="./images/symbol-defs.svg#burger"></use>
+          <use class="mobile-menu__close" href="./images/symbol-defs.svg#close"></use>
+        </svg>
+      </button>
       <ul class="contacts__list list">
         <li class="contacts__item">
           <a class="contacts__list list link" href="mailto:info@devstudio.com"> 
@@ -41,6 +47,9 @@
           </a>
         </li>
       </ul>
+      </div> 
+      <div class="mobile-menu" data-menu>
+        123
       </div> 
     </header>
 
@@ -295,5 +304,6 @@
       </div>
     </div>
     </footer>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
