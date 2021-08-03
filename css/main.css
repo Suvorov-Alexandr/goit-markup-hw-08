@@ -18,6 +18,12 @@
   align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .list {
+    display: flex;
+  }
+}
+
 .link {
   text-decoration: none;
 }
@@ -338,6 +344,12 @@ body {
   margin-top: 300px;
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-contacts__list {
+    margin-bottom: 64px;
+  }
+}
+
 .mobile-contacts__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -359,10 +371,24 @@ body {
 .mobile-social__list {
   margin-top: 64px;
   display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-social__list {
+    margin: -15px;
+  }
 }
 
 .mobile-social__item:not(:last-child) {
   margin-right: 20px;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-social__item:not(:last-child) {
+    flex-basis: calc((100% - 120px) / 2);
+    margin: 15px;
+  }
 }
 
 .mobile-social__link {
@@ -372,10 +398,57 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   transition: color var(--transition-duration) var(--cubic);
+  position: relative;
 }
 
 .mobile-social__link:hover, .mobile-social__link:focus {
   color: var(--accent-color);
+}
+
+.mobile-social__link--line1::after {
+  content: "";
+  height: 0px;
+  width: 22px;
+  position: absolute;
+  left: 85px;
+  top: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+
+.mobile-social__link--line2::after {
+  content: "";
+  height: 0px;
+  width: 22px;
+  position: absolute;
+  left: 58px;
+  top: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+
+.mobile-social__link--line3::after {
+  content: "";
+  height: 0px;
+  width: 22px;
+  position: absolute;
+  left: 80px;
+  top: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-social__link--line4::after {
+    content: "";
+    height: 0px;
+    width: 22px;
+    position: absolute;
+    left: 70px;
+    top: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
 }
 
 /* Hero */
@@ -533,6 +606,18 @@ body {
   padding: 47px 0px 94px 0px;
 }
 
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
+}
+
 .work__title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -541,6 +626,14 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  .work__title {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
 }
 
 .work__item:nth-child(-n + 2) {
@@ -701,12 +794,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .social-icon__list {
-    display: flex;
-  }
-}
-
 .social-icon__item:not(:last-child) {
   margin-right: 10px;
 }
@@ -753,12 +840,55 @@ body {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1199px) {
+  .clients__title {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+  }
+}
+
 .clients-icon__item {
   width: 170px;
 }
 
-.clients-icon__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-icon__item {
+    flex-basis: calc((100% - 120px) / 3);
+    margin: 15px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients-icon__item {
+    flex-basis: calc((100% - 120px) / 2);
+    margin: 15px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-icon__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients-icon__link {
@@ -774,6 +904,18 @@ body {
   transition-property: border-color, fill;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--cubic);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-icon__link {
+    width: 226px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients-icon__link {
+    width: 210px;
+  }
 }
 
 .clients-icon__link:hover, .clients-icon__link:focus {
