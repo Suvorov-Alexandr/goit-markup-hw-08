@@ -55,7 +55,7 @@
   }
 
   &-space {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       margin-right: 70px;
     }  
   }
@@ -144,7 +144,7 @@
 
 .form-inputf {
   position: relative;
-  width: 358px;
+  width: 100%;
   height: 50px;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -152,6 +152,12 @@
   padding: 15px 0px 15px 16px;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width: 768px) {
+    width: 445px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
   
   &::placeholder {
     font-size: 16px;

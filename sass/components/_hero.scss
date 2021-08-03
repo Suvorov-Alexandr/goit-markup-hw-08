@@ -12,7 +12,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
       ),
-    url("../images/img\(13\)..jpg");
+    url("../images/Hero-1200.jpg");
   background-repeat: no-repeat;
   background-size: auto;
 
@@ -21,12 +21,12 @@
       to right, 
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-      ), url("../../images/Hero-768.jpg");
+      ), url("../images/Hero-768.jpg");
     padding: 103px 0px;
     height: 100%;
     background-size: 100%;
     background-position: center;
-    max-width: 768px;
+    max-width: 100%;
   }
 
   @media screen and (max-width: 767px) {
@@ -34,12 +34,12 @@
       to right, 
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-      ), url("../../images/Hero-480.jpg");
+      ), url("../images/Hero-480.jpg");
     padding: 118px 0px;
-    height: 100%;
-    background-size: 100%;
+    max-height: 100%;
+    background-size: cover;
     background-position: center;
-    max-width: 480px;
+    max-width: 100%;
   }
   
   &__title {
