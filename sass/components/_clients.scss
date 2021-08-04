@@ -24,11 +24,9 @@
 }
 
 .clients-icon__item{
-  width: 170px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc((100% - 120px) / 3);
     margin: 15px;
-    width: 100%;
   }
 
   @media screen and (max-width: 767px) {
