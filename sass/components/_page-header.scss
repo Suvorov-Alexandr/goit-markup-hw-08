@@ -212,10 +212,22 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--cubic);
+  position: relative;
 
   &:hover,
   &:focus {
     color: var(--accent-color)
+  }
+
+  &--current.current::before {
+    content: "";
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
   }
 
   &--active:active{

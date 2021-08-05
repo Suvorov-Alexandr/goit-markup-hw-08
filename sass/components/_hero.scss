@@ -12,51 +12,60 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
       ),
-    url("../images/Hero-1200.jpg");
+    url("../images/hero-1200.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  background-position: center;
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url("../images/Hero-1200@2x.jpg")    
-  }
-
-  @media screen and (max-width: 1199px) {
     background-image: linear-gradient(
       to right, 
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-      ), url("../images/Hero-768.jpg");
+      ), url("../images/hero-1200@2x.jpg")    
+  }
+
+  @media screen and (max-width: 768px) {
+    background-image: linear-gradient(
+      to right, 
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ), url("../images/hero-768.jpg");
     padding: 103px 0px;
     height: 100%;
-    background-size: 100%;
-    background-position: center;
     max-width: 100%;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url("../images/Hero-768@2x.jpg")
+      background-image: linear-gradient(
+      to right, 
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ), url("../images/hero-768@2x.jpg")
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 480px) {
     background-image: linear-gradient(
       to right, 
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-      ), url("../images/Hero-480.jpg");
+      ), url("../images/hero-480.jpg");
     padding: 118px 0px;
     max-height: 100%;
-    background-size: cover;
-    background-position: center;
     max-width: 100%;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url("../images/Hero-480@2x.jpg")
+      background-image: linear-gradient(
+      to right, 
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ), url("../images/hero-480@2x.jpg")
     }
   }
   
