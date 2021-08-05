@@ -44,7 +44,7 @@
   }
 
   & > .indents-between-projects {
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width:768px) and (max-width: 1199px) {
       flex-basis: calc(100% / 2 - 30px);
       margin: 30px 0px 0px 30px;
       width: 354px;
