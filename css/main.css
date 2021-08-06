@@ -64,7 +64,6 @@ body {
 .container {
   padding: 0px 15px;
   margin: 0 auto;
-  outline: 2px solid red;
   width: 100%;
 }
 
@@ -351,7 +350,7 @@ body {
   background-color: var(--accent-color);
 }
 
-.mobile-menu__link--active:active {
+.mobile-menu__link--current.current {
   color: var(--accent-color);
 }
 

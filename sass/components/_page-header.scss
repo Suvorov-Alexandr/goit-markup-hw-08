@@ -230,7 +230,7 @@
     background-color: var(--accent-color);
   }
 
-  &--active:active{
+  &--current.current{
     color: var(--accent-color)
   }
 }
