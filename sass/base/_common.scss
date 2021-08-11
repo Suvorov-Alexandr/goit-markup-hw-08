@@ -40,7 +40,8 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-  // @media screen and (max-width: 767px) {
-  //   overflow: hidden;
-  // } 
+}
+
+.is-scrolling-disabled {
+  overflow: hidden;
 }
